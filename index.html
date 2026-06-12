@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/ironside-gym-suva/">
+<!-- BASE:END -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<!-- SEO Meta Tags -->
+<title>Ironside Suva — Strength &amp;amp; Conditioning Gym</title>
+<meta name="description" content="Ironside is Suva" />
+<meta property="og:title" content="Ironside Suva — Strength &amp;amp; Conditioning Gym" />
+<meta property="og:description" content="Ironside is Suva" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ironside Suva — Strength &amp;amp; Conditioning Gym" />
+<meta name="twitter:description" content="Ironside is Suva" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mqag8jqv-7yoe5";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4751');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='TScDu3aFq4';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain"></div>
+
+<nav>
+  <div class="wrap nav-in">
+    <div class="logo">IRON<span>SIDE</span></div>
+    <div class="nav-links">
+      <a href="#programs">Programs</a>
+      <a href="#stats">The Floor</a>
+      <a href="#contact">Contact</a>
+      <a href="#join" class="btn"><span>Join Us Now</span></a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80" alt="Athlete training hard in the gym">
+  </div>
+  <div class="ghostnum" aria-hidden="true">01</div>
+  <div class="wrap hero-inner">
+    <div class="kick mono"><span class="ln"></span> Strength · Conditioning · Suva, Fiji</div>
+    <h1 class="disp">Get stronger, <em>together.</em></h1>
+    <p class="sub">A real strength and conditioning gym in the heart of Suva. Heavy barbells, hard conditioning, and group classes that push you — built for people who show up and put in the work.</p>
+    <div class="hero-cta">
+      <a href="#join" class="btn"><span>Join Us Now</span></a>
+      <a href="#programs" class="btn ghost"><span>See the Programs</span></a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee-band">
+  <div class="marquee">
+    <div class="mtrack">
+      <span>Strength <b>/</b></span><span>Conditioning <b>/</b></span><span>Olympic Lifting <b>/</b></span><span>Group Classes <b>/</b></span><span>Open 5AM – 9PM <b>/</b></span>
+      <span>Strength <b>/</b></span><span>Conditioning <b>/</b></span><span>Olympic Lifting <b>/</b></span><span>Group Classes <b>/</b></span><span>Open 5AM – 9PM <b>/</b></span>
+    </div>
+  </div>
+</div>
+
+<section class="story reveal">
+  <div class="wrap story-grid">
+    <div class="img-frame">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1000&q=80" alt="Members training together on the floor">
+      <span class="chip mono"><span>The Floor</span></span>
+    </div>
+    <div>
+      <div class="sec-head"><span class="lbl mono">// Who we are</span><h2 class="disp">Built in Suva. Earned in reps.</h2></div>
+      <p>Ironside started with a simple idea: a serious gym for people who want to get genuinely strong, without the mirror-selfie circus. Barbells, racks, sleds, and coaches who actually know how to program a lift.</p>
+      <p>Whether you're chasing your first pull-up or a 200kg deadlift, you train alongside people doing the same. We coach the basics until they're heavy, then we keep going. Show up, do the work, get better.</p>
+      <a href="#programs" class="btn ghost"><span>What we train →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="programs reveal" id="programs">
+  <div class="wrap">
+    <div class="sec-head"><span class="lbl mono">// Train with us</span><h2 class="disp">The Programs</h2></div>
+    <div class="prog-grid">
+      <div class="prog">
+        <span class="pn disp">01</span>
+        <h3>Strength</h3>
+        <p>Barbell-focused programming — squat, press, deadlift. Structured progression, real coaching, real numbers on the bar.</p>
+        <span class="meta">4–5 sessions / week</span>
+      </div>
+      <div class="prog">
+        <span class="pn disp">02</span>
+        <h3>Conditioning</h3>
+        <p>Engine-building intervals, sleds, rowers and bikes. Brutal, scalable, and over before you can talk yourself out of it.</p>
+        <span class="meta">45 min / session</span>
+      </div>
+      <div class="prog">
+        <span class="pn disp">03</span>
+        <h3>Group Classes</h3>
+        <p>Coached classes that mix strength and conditioning in one hour. Show up, follow the board, leave wrecked in the best way.</p>
+        <span class="meta">Daily · all levels</span>
+      </div>
+      <div class="prog">
+        <span class="pn disp">04</span>
+        <h3>Olympic Lifting</h3>
+        <p>Snatch and clean &amp; jerk technique from the ground up. Small groups, heavy focus on positions before load.</p>
+        <span class="meta">2 sessions / week</span>
+      </div>
+      <div class="prog">
+        <span class="pn disp">05</span>
+        <h3>Beginner Track</h3>
+        <p>New to lifting? Start here. Six weeks of fundamentals, coached one-on-one, before you join the main floor.</p>
+        <span class="meta">6-week intro</span>
+      </div>
+      <div class="prog">
+        <span class="pn disp">06</span>
+        <h3>Open Gym</h3>
+        <p>Got your own program? Use the full floor — racks, platforms, dumbbells to 50kg, and a coach on hand if you want eyes on a lift.</p>
+        <span class="meta">Members · anytime</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats reveal" id="stats">
+  <div class="stat-grid">
+    <div class="stat"><div class="n disp">5AM</div><div class="l">Doors open daily</div></div>
+    <div class="stat"><div class="n disp">28</div><div class="l">Classes a week</div></div>
+    <div class="stat"><div class="n disp">6</div><div class="l">Coaches on staff</div></div>
+    <div class="stat"><div class="n disp">1st</div><div class="l">Session is free</div></div>
+  </div>
+</section>
+
+<section class="testi reveal">
+  <div class="wrap">
+    <div class="sec-head"><span class="lbl mono">// From the floor</span><h2 class="disp">What members say</h2></div>
+    <div class="t-grid">
+      <div class="t-card">
+        <span class="q disp">"</span>
+        <p>Came in barely able to do a press-up. A year later I deadlift more than my own bodyweight. The coaching here is the real deal.</p>
+        <span class="who"><b>Sevanaia T.</b> — Member, 14 months</span>
+      </div>
+      <div class="t-card">
+        <span class="q disp">"</span>
+        <p>The group classes ruined every other gym for me. You actually get coached, not just counted in. Best community in Suva, hands down.</p>
+        <span class="who"><b>Litia W.</b> — Member, 2 years</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="join reveal" id="join">
+  <div class="join-bg">
+    <img loading="lazy" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&q=80" alt="Gym floor with weights">
+  </div>
+  <div class="wrap join-in">
+    <h2 class="disp">Your first session is <em>on us.</em></h2>
+    <p>Come train, meet the coaches, and see the floor. No contract to walk in the door — just turn up ready to work.</p>
+    <div class="hero-cta">
+      <a href="tel:+6790000000" class="btn"><span>Book Your Free Session</span></a>
+      <a href="#contact" class="btn ghost"><span>Find Us</span></a>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">IRON<span>SIDE</span></div>
+        <p>Suva's strength and conditioning gym. Lifting, conditioning, and coached group classes for people who train seriously.</p>
+      </div>
+      <div>
+        <h4 class="mono">Find Us</h4>
+        <p>[Your street address]</p>
+        <p>Suva, Fiji</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener">Get directions →</a>
+      </div>
+      <div>
+        <h4 class="mono">Hours &amp; Contact</h4>
+        <p>Mon–Sat · 5am – 9pm</p>
+        <p>Sun · 7am – 12pm</p>
+        <a href="tel:+6790000000">+679 000 0000</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">@ironside.fj</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Ironside Gym · Suva, Fiji</span>
+      <span>Train hard · Show up · Get strong</span>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
